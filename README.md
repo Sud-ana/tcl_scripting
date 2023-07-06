@@ -30,6 +30,13 @@ Next we start to create a TCL script for reading the input csv file and parse th
 Get the rows and columns in sdc file to make it into a matrix
 ![Rows and columns from SDC file](/assets/Day_2_Get_number_of_rows_columns_in_SDC_file.jpg)
 
+One of the methods to map the CLOCK constraints is to do a rectangular search in a given area . The area is defined by the row and column numbers of the clock constraints but these are stored as different variables. The key feature of TCL that gets used in accessing them are 
+* matrix search rect
+* lindex
+* puts -nonewline <filename> to output the formatted string into the sdc file instead of printing to terminal.
+On opening the file generated, I see a snapshot of the latency and transition formatted strings as shown below:
+
+![Mapping the CLOCK constraints into a sdc file](/assets/Day3/D3_StartMapping_designConstraints_into_sdc_output.jpg)
 
 ## References
 * TCL Programming Workshop for VLSI industry by VSD.
