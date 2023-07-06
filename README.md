@@ -50,6 +50,10 @@ After the CLOCK section is completely evaluated, we can take a sneak peak at the
 ![CLOCK parsed in sdc file](/assets/Day3/D3_Clock_Constraints_parsed.jpg)
 ![Mapping the CLOCK constraints into a sdc file](/assets/Day3/D3_StartMapping_designConstraints_into_sdc_output_1.jpg)
 
+### Convert input section
+The algorithm uses the following sections
+  * globbing to search for wildcard entries
+  * 
 
 ## References
 * TCL Programming Workshop for VLSI industry by VSD.
