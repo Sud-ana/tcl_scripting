@@ -35,8 +35,10 @@ One of the methods to map the CLOCK constraints is to do a rectangular search in
 * lindex
 * puts -nonewline <filename> to output the formatted string into the sdc file instead of printing to terminal.
 On opening the file generated, I see a snapshot of the latency and transition formatted strings as shown below:
+After the CLOCK section is completely evaluated, we can take a sneak peak at the sdc file generated so far.
+![CLOCK parsed in sdc file](/assets/Day3/D3_Clock_Constraints_parsed.jpg)
+![Mapping the CLOCK constraints into a sdc file](/assets/Day3/D3_StartMapping_designConstraints_into_sdc_output_1.jpg)
 
-![Mapping the CLOCK constraints into a sdc file](/assets/Day3/D3_StartMapping_designConstraints_into_sdc_output.jpg)
 
 ## References
 * TCL Programming Workshop for VLSI industry by VSD.
