@@ -8,7 +8,7 @@ The overall task is divided into two key objectives:
 * **SHELL SCRIPT**: Write a top level shell function to invoke the utility in linux shell
 * **TCL SCRIPT**: A TCL encapsulated function .tcl file for achieving the file manipulation and formatting into the interchangeable and reusable format.
 
-The overall objective is to use the csv file defining the design files and the **Synopsys Design Constraint** file to create a new report file in sdc format. 
+The overall objective is to use the csv file defining the design files and the **Synopsys Design Constraint** file to create a new report file in sdc format. The secondary objective is to understand the industry standard specifications for the CLOCKS, INPUTS and OUTPUTS constraints while transforming them using TCL commands. 
 
 ## Progress chart
 - [x] Create the Linux command
@@ -18,7 +18,10 @@ The overall objective is to use the csv file defining the design files and the *
 - [ ] Create the framework for tcl script
   - [x] Create the case to accept the file as an argument and check it's a valid file
   - [x] Develop sections to auto-generate the output directory and file names
-  - [ ] Develop the section to read the CLOCKs from constraints file and format it into the SDC defined constraints
+  - [x] Develop the section to read the CLOCKs from the constraints file and format it into the SDC defined constraints
+  - [ ] Develop the section to read the INPUTs from the constraints file and format it into the SDC defined constraints
+  - [ ] Develop the section to read the OUTPUTs from the constraints file and format it into the SDC defined constraints
+  - [ ] 
 
 ## Breakdown of tasks and creating UNIX function
 First we create a command that will execute the GUI. 
