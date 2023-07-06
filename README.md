@@ -8,6 +8,11 @@ The overall task is divided into two key objectives:
 * **SHELL SCRIPT**: Write a top level shell function to invoke the utility in linux shell
 * **TCL SCRIPT**: A TCL encapsulated function .tcl file for achieving the file manipulation and formatting into the interchangeable and reusable format.
 
+## Progress chart
+- [] Create the Linux command
+- [] Create the framework for tcl script
+  - [] Create the banner 
+
 ## Breakdown of tasks and creating UNIX function
 First we create a command that will execute the GUI. 
 ![Executing the TCL script](/assets/Day1_MakingExecutable_Script.png)
@@ -20,3 +25,7 @@ Next we start to create a TCL script for reading the input csv file and parse th
 Get the rows and column in sdc file to make it into a matrix
 ![Rows and columns from SDC file](/asset/Day_2_Get_number_of_rows_columns_in_SDC_file.jpg)
 
+
+## References
+* TCL Programming Workshop for VLSI industry by VSD.
+* 
