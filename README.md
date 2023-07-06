@@ -15,3 +15,4 @@ Next we start to create a TCL script for reading the input csv file and parse th
 ## Convert the constraints file into SDC format
 Get the rows and column in sdc file to make it into a matrix
 ![Rows and columns from SDC file](/asset/Day_2_Get_number_of_rows_columns_in_SDC_file.jpg)
+
