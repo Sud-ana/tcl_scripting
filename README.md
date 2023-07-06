@@ -8,10 +8,15 @@ The overall task is divided into two key objectives:
 * **SHELL SCRIPT**: Write a top level shell function to invoke the utility in linux shell
 * **TCL SCRIPT**: A TCL encapsulated function .tcl file for achieving the file manipulation and formatting into the interchangeable and reusable format.
 
+The overall objective is to use the csv file defining the design files and the **Synopsys Design Constraint** file to create a new report file in sdc format. 
+
 ## Progress chart
-- [] Create the Linux command
-- [] Create the framework for tcl script
-  - [] Create the banner 
+- [x] Create the Linux command
+  - [x] Create Usage description
+  - [x] Create case for incorrect file name
+  - [x] Create case to invoke the tcl script  
+- [ ] Create the framework for tcl script
+  - [ ] Create the case to accept the file as an argument and check it's a valid file
 
 ## Breakdown of tasks and creating UNIX function
 First we create a command that will execute the GUI. 
@@ -22,8 +27,8 @@ Next we start to create a TCL script for reading the input csv file and parse th
 ![Executing the TCL script](/assets/Day2_BareBonesTCL_Script.jpg)
 
 ## Convert the constraints file into SDC format
-Get the rows and column in sdc file to make it into a matrix
-![Rows and columns from SDC file](/asset/Day_2_Get_number_of_rows_columns_in_SDC_file.jpg)
+Get the rows and columns in sdc file to make it into a matrix
+![Rows and columns from SDC file](/assets/Day_2_Get_number_of_rows_columns_in_SDC_file.jpg)
 
 
 ## References
