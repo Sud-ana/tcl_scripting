@@ -4,6 +4,10 @@ This is a TCL programming workshop documentation following along the program by 
 
 Tool Command Language (Tcl) is a scripting language commonly used in various domains, including software development, system administration, and electronic design automation (EDA). Tcl is known for its simplicity, flexibility, and ease of integration with other programming languages and tools. Tcl scripting involves writing scripts in the Tcl language to automate tasks, execute commands, and manipulate data.
 
+The overall task is divided into two key objectives:
+*Write a top level shell function to invoke the utility in linux shell
+*A TCL encapsulated function file for achieving the file manipulation and formatting into the interchangeable and reusable format.
+
 ## Breakdown of tasks and creating UNIX function
 First we create a command that will execute the GUI. 
 ![Executing the TCL script](/assets/Day1_MakingExecutable_Script.png)
