@@ -16,7 +16,9 @@ The overall objective is to use the csv file defining the design files and the *
   - [x] Create case for incorrect file name
   - [x] Create case to invoke the tcl script  
 - [ ] Create the framework for tcl script
-  - [ ] Create the case to accept the file as an argument and check it's a valid file
+  - [x] Create the case to accept the file as an argument and check it's a valid file
+  - [x] Develop sections to auto-generate the output directory and file names
+  - [ ] Develop the section to read the CLOCKs from constraints file and format it into the SDC defined constraints
 
 ## Breakdown of tasks and creating UNIX function
 First we create a command that will execute the GUI. 
@@ -25,7 +27,13 @@ First we create a command that will execute the GUI.
 ## Programming the TCL script
 Next we start to create a TCL script for reading the input csv file and parse the contents into a variable to use throughout the code.
 ![Executing the TCL script](/assets/Day2_BareBonesTCL_Script.jpg)
-
+It is useful to auto-generate the directory and filenames for the utility programmatically. This is achieved by 
+* an iteration to gather and map the cell content of the input csv file
+* A search and replace to replace all spaces with no space
+* setting the formatted name to the values specified in the adjacent column in the excel.
+  *  This is achieved by reading the csv file as a matrix and using a while {} loop
+![File Variables](/assets/D2_FileVariables.jpg)
+ 
 ## Convert the constraints file into SDC format
 Get the rows and columns in sdc file to make it into a matrix
 ![Rows and columns from SDC file](/assets/Day_2_Get_number_of_rows_columns_in_SDC_file.jpg)
