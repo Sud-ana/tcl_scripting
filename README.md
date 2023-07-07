@@ -75,7 +75,8 @@ So this concludes the first part of tool scripts that had the following features
     * Convert format[1] & SDC to format[2] and pass to timing tool "Opentimer"
       * We will then generate a report which will be used for benchmarking . 
 ## Yosys and Opentimer EDA tools:
-  
+ We start the task by building a memory of word size 1 and address size 1 to represent a 2 bit memory's behavioural description in the RTL.
+ 
 Yosys and Opentimer
 ## References
 * TCL Programming Workshop for VLSI industry by VSD.
