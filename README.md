@@ -60,6 +60,9 @@ The input ports defined as a bus are parsed and saved in a sdc format that neces
 
 ![Bussed signals](/assets/Bussed_InputPorts_searched_into.jpg)
 
+### Writing constraints for the output section
+
+
 ## References
 * TCL Programming Workshop for VLSI industry by VSD.
 * 
