@@ -56,6 +56,10 @@ The algorithm uses the following sections
   * 
 
 ![Spit the bussed lines ](/assets/D3_SplitBusLines_1.jpg)
+The input ports defined as a bus are parsed and saved in a sdc format that necessitates the presence of *\** 
+
+![Bussed signals](/assets/Bussed_InputPorts_searched_into.jpg)
+
 ## References
 * TCL Programming Workshop for VLSI industry by VSD.
 * 
