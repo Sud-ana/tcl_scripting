@@ -55,6 +55,7 @@ The algorithm uses the following sections
   * globbing to search for wildcard entries
   * 
 
+![Spit the bussed lines ](/assets/D3_SplitBusLines_1.jpg)
 ## References
 * TCL Programming Workshop for VLSI industry by VSD.
 * 
