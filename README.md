@@ -76,6 +76,17 @@ So this concludes the first part of tool scripts that had the following features
       * We will then generate a report which will be used for benchmarking . 
 ## Yosys and Opentimer EDA tools:
  We start the task by building a memory of word size 1 and address size 1 to represent a 2 bit memory's behavioural description in the RTL.
+ To this end we define a RTL as below:
+ ![memory_module](/assets/Synthesis/memory_module.jpg)
+ The yosys environment is invoked and we run a bunch of yosys synthesis configurations as below
+  ![memory_module](/assets/Synthesis/memory_synthesis.jpg)
+  ![memory_module](/assets/Synthesis/run_synthesis.jpg)
+  This brings up the synthesized GLS with functional gates when I type *show* in the yosys prompt.
+  ![memory_module](/assets/Synthesis/synthesized_GLS.jpg)
+
+  
+   
+  
  
 Yosys and Opentimer
 ## References
