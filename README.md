@@ -61,8 +61,20 @@ The input ports defined as a bus are parsed and saved in a sdc format that neces
 ![Bussed signals](/assets/Bussed_InputPorts_searched_into.jpg)
 
 ### Writing constraints for the output section
+```
+Tcl commands used to write a loop to iterate over the rows and columns specific to OUTPUT section
+  For each row which is a port, identify if the port is single signal or bussed to define is by name or name*
+    Parse the ; to get the SDC formatted values. 
+```
+!(Output Port Delay parsed)(/assets/OutputPortDelays.jpg)
 
+So this concludes the first part of tool scripts that had the following features:
+* Creating a command and passing the .csv from UNIX shell to TCL script
+    * Convert all the inputs to format[1] & SDC format which will be passed to Yosys synthesis tool
+    * Convert format[1] & SDC to format[2] and pass to timing tool "Opentimer"
+      * We will then generate a report which will be used for benchmarking . 
 
+Yosys and Opentimer
 ## References
 * TCL Programming Workshop for VLSI industry by VSD.
 * 
