@@ -66,7 +66,7 @@ Tcl commands used to write a loop to iterate over the rows and columns specific 
   For each row which is a port, identify if the port is single signal or bussed to define is by name or name*
     Parse the ; to get the SDC formatted values. 
 ```
-!(Output Port Delay parsed)(/assets/OutputPortDelays.jpg)
+![Output Port Delay parsed](/assets/OutputPortDelays.jpg)
 
 So this concludes the first part of tool scripts that had the following features:
 * Creating a command and passing the .csv from UNIX shell to TCL script
