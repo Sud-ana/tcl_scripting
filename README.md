@@ -22,8 +22,9 @@ The overall objective is to use the csv file defining the design files and the *
   - [x] Develop the section to read the INPUTs from the constraints file and format it into the SDC defined constraints
   - [x] Develop the section to read the OUTPUTs from the constraints file and format it into the SDC defined constraints
 - [ ] Introduction to EDA tools : Yosys, Opentimer
-  - [x]  Using Yosys to synthesize a module defined in RTL to GLS
-    - [x] Hierarchical check and error logging   
+  - [x]  Using Yosys to synthesize a module defined in RTL to GLS to generate the synthesis report in .synth.v
+    - [x] Hierarchical check and error logging
+  - [ ] OpenTimer tool to analyse the synthesis report   
 
 ## Breakdown of tasks and creating UNIX function
 First we create a command that will execute the GUI. 
