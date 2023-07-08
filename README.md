@@ -99,11 +99,18 @@ I use Yosys to synthesize the design and log the output into a synth.v file whic
  ![memory_module](/assets/Synthesis/4_synthesis_logged.jpg)
 
  ## Procs
-   Procs are used extensively in scripting to avoid repeatitive tasks. The procedure is similar to functions in other high level languages. The procs are sourced prior to their use and defined in the sourced files. 
+   Procs are used extensively in scripting for re-using parts of the code. The procedure is similar to functions in other high level languages. The procs are sourced prior to their use and defined in the sourced files. 
    Example of a proc is shown below:
   ![Proc example](/assets/Procs/1_Proc_Example.jpg)
   ![Proc_output](/assets/Procs/2_Proc_executed.jpg)
+Several different procs are required to be developed for the utility, some of them are named here which are getting used to generate a conf (STA timing analysis configuration file), and some others
+* reopenStdout.proc to log all the prints from the terminal standard output to a .conf file
+* set_num_threads to inititiate multithreading to analyse the results faster
+* read_lib
+* read_verilog
+* read_sdc to convert the sdc constraint to open timer format.
 
+  
   
 Yosys and Opentimer
 ## References
