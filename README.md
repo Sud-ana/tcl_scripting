@@ -15,14 +15,15 @@ The overall objective is to use the csv file defining the design files and the *
   - [x] Create Usage description
   - [x] Create case for incorrect file name
   - [x] Create case to invoke the tcl script  
-- [ ] Create the framework for tcl script
+- [x] Create the framework for tcl script
   - [x] Create the case to accept the file as an argument and check it's a valid file
   - [x] Develop sections to auto-generate the output directory and file names
   - [x] Develop the section to read the CLOCKs from the constraints file and format it into the SDC defined constraints
   - [x] Develop the section to read the INPUTs from the constraints file and format it into the SDC defined constraints
   - [x] Develop the section to read the OUTPUTs from the constraints file and format it into the SDC defined constraints
 - [ ] Introduction to EDA tools : Yosys, Opentimer
--   [ ]    
+  - [x]  Using Yosys to synthesize a module defined in RTL to GLS
+    - [x] Hierarchical check and error logging   
 
 ## Breakdown of tasks and creating UNIX function
 First we create a command that will execute the GUI. 
@@ -74,8 +75,9 @@ So this concludes the first part of tool scripts that had the following features
     * Convert all the inputs to format[1] & SDC format which will be passed to Yosys synthesis tool
     * Convert format[1] & SDC to format[2] and pass to timing tool "Opentimer"
       * We will then generate a report which will be used for benchmarking . 
-## Yosys and Opentimer EDA tools:
+# Yosys and Opentimer EDA tools:
  We start the task by building a memory of word size 1 and address size 1 to represent a 2 bit memory's behavioural description in the RTL.
+ ## Sythesis of GLS from RTL
  To this end we define a RTL as below:
  ![memory_module](/assets/Synthesis/memory_module.jpg)
  The yosys environment is invoked and we run a bunch of yosys synthesis configurations as below
@@ -84,8 +86,10 @@ So this concludes the first part of tool scripts that had the following features
   This brings up the synthesized GLS with functional gates when I type *show* in the yosys prompt.
   ![memory_module](/assets/Synthesis/synthesized_GLS.jpg)
 
+## Error checking in hierarchy
+The objective of this step is to ensure that there are no errors in the module definitions and all the instantiated modules are well connected hierarchically. The error logs and flags should be generated in case of any missing module names to direct the user to approprate debug mechanisms.
+  ![memory_module](/assets/Synthesis/Hierarchy_Checked_Successfully.jpg)
   
-   
   
  
 Yosys and Opentimer
