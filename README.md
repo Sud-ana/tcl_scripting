@@ -77,7 +77,7 @@ So this concludes the first part of tool scripts that had the following features
       * We will then generate a report which will be used for benchmarking . 
 # Yosys and Opentimer EDA tools:
  We start the task by building a memory of word size 1 and address size 1 to represent a 2 bit memory's behavioural description in the RTL.
- ## Sythesis of GLS from RTL
+ ## Synthesis of GLS from RTL
  To this end we define a RTL as below:
  ![memory_module](/assets/Synthesis/memory_module.jpg)
  The yosys environment is invoked and we run a bunch of yosys synthesis configurations as below
@@ -86,11 +86,14 @@ So this concludes the first part of tool scripts that had the following features
   This brings up the synthesized GLS with functional gates when I type *show* in the yosys prompt.
   ![memory_module](/assets/Synthesis/synthesized_GLS.jpg)
 
-## Error checking in hierarchy
+### Error checking in the hierarchy
 The objective of this step is to ensure that there are no errors in the module definitions and all the instantiated modules are well connected hierarchically. The error logs and flags should be generated in case of any missing module names to direct the user to approprate debug mechanisms.
   ![memory_module](/assets/Synthesis/Hierarchy_Checked_Successfully.jpg)
   
-  
+  ## Successful synthesis execution
+I use Yosys to synthesize the design and log the output into a synth.v file which is to be consumed by the timing tool for timing report generation. 
+ ![memory_module](/assets/Synthesis/Creating_and_dumping_synthesis_script_openDOTys.jpg)
+ ![memory_module](/assets/Synthesis/4_synthesis_logged.jpg)
  
 Yosys and Opentimer
 ## References
