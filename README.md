@@ -103,12 +103,14 @@ I use Yosys to synthesize the design and log the output into a synth.v file whic
    Example of a proc is shown below:
   ![Proc example](/assets/Procs/1_Proc_Example.jpg)
   ![Proc_output](/assets/Procs/2_Proc_executed.jpg)
-Several different procs are required to be developed for the utility, some of them are named here which are getting used to generate a conf (STA timing analysis configuration file), and some others
+
+Several different procs are required to be developed for the utility, some of them are named here and are getting used to generate a conf (STA timing analysis configuration file), and some others
 * reopenStdout.proc to log all the prints from the terminal standard output to a .conf file
-* set_num_threads to inititiate multithreading to analyse the results faster
+* set_num_threads to initiate multithreading to analyze the results faster
 * read_lib
 * read_verilog
 * read_sdc to convert the sdc constraint to open timer format.
+The read_sdc proc achieves the desired functionality
 
   
   
