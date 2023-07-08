@@ -110,7 +110,8 @@ Several different procs are required to be developed for the utility, some of th
 * read_lib
 * read_verilog
 * read_sdc to convert the sdc constraint to open timer format.
-The read_sdc proc achieves the desired functionality
+The read_sdc proc achieves the desired functionality by parsing the CLOCKS, INPUTS , OUTPUTS sequentially one after the other
+
 
   
   
