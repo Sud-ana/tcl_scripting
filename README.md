@@ -24,7 +24,8 @@ The overall objective is to use the csv file defining the design files and the *
 - [ ] Introduction to EDA tools : Yosys, Opentimer
   - [x]  Using Yosys to synthesize a module defined in RTL to GLS to generate the synthesis report in .synth.v
     - [x] Hierarchical check and error logging
-  - [ ] OpenTimer tool to analyse the synthesis report   
+  - [ ] OpenTimer tool introduction
+    - [ ] Use TCL to convert the synthesis SDC report in synth.v into format[2] for openTimer tool  
 
 ## Breakdown of tasks and creating UNIX function
 First we create a command that will execute the GUI. 
