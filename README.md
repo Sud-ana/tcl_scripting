@@ -26,7 +26,7 @@ The overall objective is to use the csv file defining the design files and the *
     - [x] Hierarchical check and error logging
   - [ ] OpenTimer tool introduction
     - [ ] Use TCL to convert the synthesis SDC netlist report in synth.v with redundant information into format[2] for openTimer tool  (or any timing tool) to consume the netlist
-    - [ ] 
+    - [ ] Introduction to procs   
 
 ## Breakdown of tasks and creating UNIX function
 First we create a command that will execute the GUI. 
@@ -97,7 +97,14 @@ The objective of this step is to ensure that there are no errors in the module d
 I use Yosys to synthesize the design and log the output into a synth.v file which is to be consumed by the timing tool for timing report generation. 
  ![memory_module](/assets/Synthesis/Creating_and_dumping_synthesis_script_openDOTys.jpg)
  ![memory_module](/assets/Synthesis/4_synthesis_logged.jpg)
- 
+
+ ## Procs
+   Procs are used extensively in scripting to avoid repeatitive tasks. The procedure is similar to functions in other high level languages. The procs are sourced prior to their use and defined in the sourced files. 
+   Example of a proc is shown below:
+  ![Proc example](/assets/Procs/1_Proc_Example.jpg)
+  ![Proc_output](/assets/Procs/2_Proc_executed.jpg)
+
+  
 Yosys and Opentimer
 ## References
 * TCL Programming Workshop for VLSI industry by VSD.
