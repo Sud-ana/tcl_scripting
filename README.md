@@ -28,8 +28,9 @@ The overall objective is to use the csv file defining the design files and the *
     - [ ] Use TCL to convert the synthesis SDC netlist report in synth.v with redundant information into format[2] for openTimer tool  (or any timing tool) to consume the netlist
     - [x] Introduction to procs
       - [x] Reviewed existing procs in the utility
-    - [ ] SPEF file generation
-    - [ ] .conf file generation      
+    - [x] SPEF file generation
+    - [x] .conf file generation
+  - [ ] Generating an QOR Quality of Results check report:       
 
 ## Breakdown of tasks and creating UNIX function
 First we create a command that will execute the GUI. 
@@ -137,8 +138,8 @@ The .conf generated from the TCL script is shown here:
 ![SPEF File Output](/assets/conf/0_conf_spef.jpg)
 ![SPEF File Output](/assets/conf/1_conf_file_created.jpg)
 
-  
-  
+# QOR report
+  The quality of the report gives a summarized report for the static timing analysis which is useful to benchmark different tools or results. 
 
 ## References
 * TCL Programming Workshop for VLSI industry by VSD.
