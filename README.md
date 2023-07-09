@@ -74,9 +74,9 @@ The input ports defined as a bus are parsed and saved in a sdc format that neces
 
 ### Writing constraints for the output section
 ```
-Tcl commands used to write a loop to iterate over the rows and columns specific to OUTPUT section
-  For each row which is a port, identify if the port is single signal or bussed to define is by name or name*
-    Parse the ; to get the SDC formatted values. 
+Tcl commands are used to write a loop to iterate over the rows and columns specific to the OUTPUT section
+  For each row that is a port, identify if the port is a single signal or bussed to define it by name or name*
+    Parse the; to get the SDC formatted values. 
 ```
 ![Output Port Delay parsed](/assets/OutputPortDelays.jpg)
 
@@ -84,13 +84,15 @@ So this concludes the first part of tool scripts that had the following features
 * Creating a command and passing the .csv from UNIX shell to TCL script
     * Convert all the inputs to format[1] & SDC format which will be passed to Yosys synthesis tool
     * Convert format[1] & SDC to format[2] and pass to timing tool "Opentimer"
-      * We will then generate a report which will be used for benchmarking . 
+      * We will then generate a report which will be used for benchmarking. 
 # Yosys and Opentimer EDA tools:
- We start the task by building a memory of word size 1 and address size 1 to represent a 2 bit memory's behavioural description in the RTL.
+ We start the task by building a memory of word size 1 and address size 1 to represent a 2-bit memory's behavioral description in the RTL.
  ## Synthesis of GLS from RTL
  To this end we define a RTL as below:
  ![memory_module](/assets/Synthesis/memory_module.jpg)
+ 
  The yosys environment is invoked and we run a bunch of yosys synthesis configurations as below
+ 
   ![memory_module](/assets/Synthesis/memory_synthesis.jpg)
   ![memory_module](/assets/Synthesis/run_synthesis.jpg)
   This brings up the synthesized GLS with functional gates when I type *show* in the yosys prompt.
@@ -149,10 +151,13 @@ The .conf generated from the TCL script is shown here:
   * RunTime etc.
 
 So TCL script has sections setup for gathering the various parameters from the timing reports and then assigning them to the variable for respective parameters.  
+![STA completion](/assets/QOR/CodeSnippet.jpg)
+
 ![STA completion](/assets/QOR/1_sta_completed_300ms.jpg)
 ![STA completion](/assets/QOR/2_Number_of_failing_end_points.jpg)
 ![STA completion](/assets/QOR/3_Vertical_report.jpg)
 ![Incomplete QOR report](/assets/QOR/4_Intermediate_QOR.jpg)
+
 
 **The instance count is throwing up errors due to which it is excluded from part of the report generation and needs further debugs.**
 # Issues
