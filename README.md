@@ -152,6 +152,8 @@ So TCL script has sections setup for gathering the various parameters from the t
 ![STA completion](/assets/QOR/1_sta_completed_300ms.jpg)
 ![STA completion](/assets/QOR/2_Number_of_failing_end_points.jpg)
 ![STA completion](/assets/QOR/3_Vertical_report.jpg)
+![Incomplete QOR report](/assets/QOR/4_Intermediate_QOR.jpg)
+
 **The instance count is throwing up errors due to which it is excluded from part of the report generation and needs further debugs.**
 
 ## References
