@@ -134,7 +134,7 @@ The .conf file has useful information which is used in the yosys synthesis. So t
   * threading set
 The .conf generated from the TCL script is shown here:
 
-![SPEF File Output](/assets/conf/0_conf_spef.jpg.jpg)
+![SPEF File Output](/assets/conf/0_conf_spef.jpg)
 ![SPEF File Output](/assets/conf/1_conf_file_created.jpg)
 
   
