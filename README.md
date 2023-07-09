@@ -10,7 +10,7 @@ The overall task is divided into two key objectives:
 
 The overall objective is to use the csv file defining the design files and the **Synopsys Design Constraint** file to create a new report file in sdc format. The secondary objective is to understand the industry standard specifications for the CLOCKS, INPUTS and OUTPUTS constraints while transforming them using TCL commands. 
 
-## Progress chart
+## Sections
 - [x] Create the Linux command
   - [x] Create Usage description
   - [x] Create case for incorrect file name
@@ -31,9 +31,9 @@ The overall objective is to use the csv file defining the design files and the *
     - [x] SPEF file generation
     - [x] .conf file generation
   - [x] Generating a QOR Quality of Results check report:
-    - [] Understanding the parameters added in a generic industry standard QOR report
-    - [] Understanding the timing report files from which these are extracted to be added
-    - [] TCL and LINUX scripting to grep the data and add it to respective report sections.       
+    - [x] Understanding the parameters added in a generic industry standard QOR report
+    - [x] Understanding the timing report files from which these are extracted to be added
+    - [ ] TCL and LINUX scripting to grep the data and add it to respective report sections.       
 
 ## Breakdown of tasks and creating UNIX function
 First, we create a command that will execute the GUI. 
@@ -59,8 +59,8 @@ One of the methods to map the CLOCK constraints is to do a rectangular search in
 * puts -nonewline <filename> to output the formatted string into the sdc file instead of printing to terminal.
 On opening the file generated, I see a snapshot of the latency and transition formatted strings as shown below:
 After the CLOCK section is completely evaluated, we can take a sneak peak at the sdc file generated so far.
-![CLOCK parsed in sdc file](/assets/Day3/D3_Clock_Constraints_parsed.jpg)
-![Mapping the CLOCK constraints into a sdc file](/assets/Day3/D3_StartMapping_designConstraints_into_sdc_output_1.jpg)
+![CLOCK parsed in sdc file](/assets/Day_3/D3_Clock_Constraints_parsed.jpg)
+![Mapping the CLOCK constraints into a sdc file](/assets/Day_3/D3_StartMapping_designConstraints_into_sdc_output_1.jpg)
 
 ### Convert input section
 The algorithm uses the following sections
