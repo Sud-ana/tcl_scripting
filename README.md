@@ -168,4 +168,4 @@ So TCL script has sections setup for gathering the various parameters from the t
 
 ## References
 * TCL Programming Workshop for VLSI industry by VSD.
-* 
+  *  Kunal Ghosh kunalpghosh@gmail.com for creating and organizing the workshop
