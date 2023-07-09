@@ -148,6 +148,7 @@ The .conf generated from the TCL script is shown here:
 So TCL script has sections setup for gathering the various parameters from the timing reports and then assigning them to the variable for respective parameters. 
 ![STA completion](/assets/QOR/1_sta_completed_300ms.jpg)
 ![STA completion](/assets/QOR/2_Number_of_failing_end_points.jpg)
+![STA completion](/assets/QOR/3_Vertical_report.jpg)
 
 ## References
 * TCL Programming Workshop for VLSI industry by VSD.
