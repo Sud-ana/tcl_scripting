@@ -140,7 +140,13 @@ The .conf generated from the TCL script is shown here:
 ![SPEF File Output](/assets/conf/1_conf_file_created.jpg)
 
 # QOR report
-  The quality of the report gives a summarized report for the static timing analysis which is useful to benchmark different tools or results. 
+  The quality of the report gives a summarized report for the static timing analysis which is useful to benchmark different tools or results.  There are various specifications we can look at in the report such as below
+  * Setup and Hold timing violations
+  * Failed End Points
+  * RunTime etc.
+
+So TCL script has sections setup for gathering the various parameters from the timing reports and then assigning them to the variable for respective parameters. 
+![
 
 ## References
 * TCL Programming Workshop for VLSI industry by VSD.
