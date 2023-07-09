@@ -26,7 +26,10 @@ The overall objective is to use the csv file defining the design files and the *
     - [x] Hierarchical check and error logging
   - [ ] OpenTimer tool introduction
     - [ ] Use TCL to convert the synthesis SDC netlist report in synth.v with redundant information into format[2] for openTimer tool  (or any timing tool) to consume the netlist
-    - [ ] Introduction to procs   
+    - [x] Introduction to procs
+      - [x] Reviewed existing procs in the utility
+    - [ ] SPEF file generation
+    - [ ] .conf file generation      
 
 ## Breakdown of tasks and creating UNIX function
 First we create a command that will execute the GUI. 
@@ -113,10 +116,30 @@ Several different procs are required to be developed for the utility, some of th
 The read_sdc proc achieves the desired functionality by parsing the CLOCKS, INPUTS , OUTPUTS sequentially one after the other. So for this part one needs to understand the syntax of the constraints and develop the proc segmented for each constraint accordingly.
 
 
+## SPEF generation
+SPEF file has the parasitic extraction format required for the physical design elaboration step. We just create a template spef file for the utility as shown in the output spef file dumped to the output directory.
+![SPEF File Output](/assets/conf/2_spef_file_dumped.jpg)
+
+### conf file generation
+The .conf file has useful information which is used in the yosys synthesis. So the conf file is created in the TCL script that has the following paths
+
+* path to the final synthesized netlist,
+* path to spef file,
+* timing files,
+* standard cell
+* related procs :
+  * timing initialisation
+  * timing report
+  * worst path reports
+  * threading set
+The .conf generated from the TCL script is shown here:
+
+![SPEF File Output](/assets/conf/0_conf_spef.jpg.jpg)
+![SPEF File Output](/assets/conf/1_conf_file_created.jpg)
 
   
   
-Yosys and Opentimer
+
 ## References
 * TCL Programming Workshop for VLSI industry by VSD.
 * 
