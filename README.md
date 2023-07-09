@@ -133,7 +133,7 @@ The .conf file has useful information which is used in the yosys synthesis. So t
 * timing files,
 * standard cell
 * related procs :
-  * timing initialisation
+  * timing initialization
   * timing report
   * worst path reports
   * threading set
@@ -155,6 +155,11 @@ So TCL script has sections setup for gathering the various parameters from the t
 ![Incomplete QOR report](/assets/QOR/4_Intermediate_QOR.jpg)
 
 **The instance count is throwing up errors due to which it is excluded from part of the report generation and needs further debugs.**
+# Issues
+1.  The instance count is throwing up errors due to which it is excluded from part of the report generation and needs further debugs.
+2.  QOR report has numbers reported with multiple significant digits.
+3.  Synthesis is completed in 300ms only, so time in seconds is printed as 0.
+4.  
 
 ## References
 * TCL Programming Workshop for VLSI industry by VSD.
