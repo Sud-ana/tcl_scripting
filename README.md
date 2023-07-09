@@ -119,6 +119,7 @@ The read_sdc proc achieves the desired functionality by parsing the CLOCKS, INPU
 
 ## SPEF generation
 SPEF file has the parasitic extraction format required for the physical design elaboration step. We just create a template spef file for the utility as shown in the output spef file dumped to the output directory.
+
 ![SPEF File Output](/assets/conf/2_spef_file_dumped.jpg)
 
 ### conf file generation
