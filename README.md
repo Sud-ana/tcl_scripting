@@ -30,7 +30,10 @@ The overall objective is to use the csv file defining the design files and the *
       - [x] Reviewed existing procs in the utility
     - [x] SPEF file generation
     - [x] .conf file generation
-  - [ ] Generating an QOR Quality of Results check report:       
+  - [ ] Generating a QOR Quality of Results check report:
+    - [ ] Understanding the parameters added in a generic industry standard QOR report
+    - [ ] Understanding the timing report files from which these are extracted to be added
+    - [ ] TCL and LINUX scripting to grep the data and add it to respective report sections.       
 
 ## Breakdown of tasks and creating UNIX function
 First we create a command that will execute the GUI. 
@@ -145,10 +148,11 @@ The .conf generated from the TCL script is shown here:
   * Failed End Points
   * RunTime etc.
 
-So TCL script has sections setup for gathering the various parameters from the timing reports and then assigning them to the variable for respective parameters. 
+So TCL script has sections setup for gathering the various parameters from the timing reports and then assigning them to the variable for respective parameters.  
 ![STA completion](/assets/QOR/1_sta_completed_300ms.jpg)
 ![STA completion](/assets/QOR/2_Number_of_failing_end_points.jpg)
 ![STA completion](/assets/QOR/3_Vertical_report.jpg)
+**The instance count is throwing up errors due to which it is excluded from part of the report generation and needs further debugs.**
 
 ## References
 * TCL Programming Workshop for VLSI industry by VSD.
