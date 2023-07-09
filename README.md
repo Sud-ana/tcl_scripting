@@ -8,7 +8,7 @@ The overall task is divided into two key objectives:
 * **SHELL SCRIPT**: Write a top level shell function to invoke the utility in linux shell
 * **TCL SCRIPT**: A TCL encapsulated function .tcl file for achieving the file manipulation and formatting into the interchangeable and reusable format.
 
-The overall objective is to use the csv file defining the design files and the **Synopsys Design Constraint** file to create a new report file in sdc format. The secondary objective is to understand the industry standard specifications for the CLOCKS, INPUTS and OUTPUTS constraints while transforming them using TCL commands. 
+The overall objective is to use the design details path information encapsulated into a csv ,  defining the design requirements of the existing RTL module , create the constraints file in sdc ( **Synopsys Design Constraint** ) format while synthesizing it using Yosys. The secondary objective is to understand the industry standard specifications for the CLOCKS, INPUTS and OUTPUTS constraints while transforming them using TCL commands and creating a QOR report for **Pre-Layout Timing Results** that can be used for benchmarking performance analysis . 
 
 ## Sections
 - [x] Create the Linux command
