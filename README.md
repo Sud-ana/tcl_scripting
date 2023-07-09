@@ -100,7 +100,7 @@ So this concludes the first part of tool scripts that had the following features
 The objective of this step is to ensure that there are no errors in the module definitions and all the instantiated modules are well connected hierarchically. The error logs and flags should be generated in case of any missing module names to direct the user to approprate debug mechanisms.
   ![memory_module](/assets/Synthesis/Hierarchy_Checked_Successfully.jpg)
   
-  ## Successful synthesis execution
+  ## Successful synthesis
 I use Yosys to synthesize the design and log the output into a synth.v file which is to be consumed by the timing tool for timing report generation. 
  ![memory_module](/assets/Synthesis/Creating_and_dumping_synthesis_script_openDOTys.jpg)
  ![memory_module](/assets/Synthesis/4_synthesis_logged.jpg)
