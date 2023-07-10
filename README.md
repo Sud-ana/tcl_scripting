@@ -55,7 +55,10 @@ Some features of this step are as below
 * Reading the file description and converting it into an autogenerating file name
   * ``` string map {\" \" \"\"} $array(1, $1)```
 * Using normalize function to normalize the relative and absolute file paths into absolute file paths.
-* Reading the file 
+* Reading the file
+
+The constraints.csv is the specifications of the system for the ports. Inputs, Outputs and Clocks. 
+
 Get the rows and columns in sdc file to make it into a matrix
 ![Rows and columns from SDC file](/assets/Day_2_Get_number_of_rows_columns_in_SDC_file.jpg)
 
