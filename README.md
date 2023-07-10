@@ -50,6 +50,12 @@ It is useful to auto-generate the directory and filenames for the utility progra
 ![File Variables](/assets/D2_FileVariables.jpg)
  
 ## Convert the constraints file into SDC format
+The design details are in a csv file format. So the first step is to read the csv into a matrix and then convert the matrix to an array which gives further accessiblity of the elements for mathematical operations. 
+Some features of this step are as below
+* Reading the file description and converting it into an autogenerating file name
+  * ``` string map {\" \" \"\"} $array(1, $1)```
+* Using normalize function to normalize the relative and absolute file paths into absolute file paths.
+* Reading the file 
 Get the rows and columns in sdc file to make it into a matrix
 ![Rows and columns from SDC file](/assets/Day_2_Get_number_of_rows_columns_in_SDC_file.jpg)
 
