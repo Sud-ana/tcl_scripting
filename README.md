@@ -167,6 +167,8 @@ So TCL script has sections setup for gathering the various parameters from the t
 ![STA completion](/assets/QOR/3_Vertical_report.jpg)
 ![Incomplete QOR report](/assets/QOR/4_Intermediate_QOR.jpg)
 
+So the whole script utility is run by typing in the following command at the linux shell
+```  ./vsdsynth openMSP430_design_details.csv ```
 
 **The instance count is throwing up errors due to which it is excluded from part of the report generation and needs further debugs.**
 # Issues
