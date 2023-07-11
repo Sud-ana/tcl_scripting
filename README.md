@@ -165,7 +165,7 @@ So TCL script has sections setup for gathering the various parameters from the t
 ![STA completion](/assets/QOR/1_sta_completed_300ms.jpg)
 ![STA completion](/assets/QOR/2_Number_of_failing_end_points.jpg)
 ![STA completion](/assets/QOR/3_Vertical_report.jpg)
-![Incomplete QOR report](/assets/QOR/4_Intermediate_QOR.jpg)
+![Incomplete QOR report](/assets/QOR/4_Intermediate_QOR_1.jpg)
 
 So the whole script utility is run by typing in the following command at the linux shell
 ```  ./vsdsynth openMSP430_design_details.csv ```
