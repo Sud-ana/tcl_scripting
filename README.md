@@ -33,7 +33,8 @@ The overall objective is to use the design details path information encapsulated
   - [x] Generating a QOR Quality of Results check report:
     - [x] Understanding the parameters added in a generic industry standard QOR report
     - [x] Understanding the timing report files from which these are extracted to be added
-    - [x] TCL and LINUX scripting to grep the data and add it to respective report sections.       
+    - [x] TCL and LINUX scripting to grep the data and add it to respective report sections.
+  - [x] Codebase
 
 ## Breakdown of tasks and creating UNIX function
 First, we create a command that will execute the GUI. 
@@ -169,7 +170,8 @@ So TCL script has sections setup for gathering the various parameters from the t
 
 So the whole script utility is run by typing in the following command at the linux shell
 ```  ./vsdsynth openMSP430_design_details.csv ```
-
+The code is updated here 
+![TCL Workshop](/assets/code/vsdsynth.tcl)
 # Issues
 1.  The instance count is throwing up errors due to which it is excluded from part of the report generation and needs further debugs.
 2.  QOR report has numbers reported with multiple significant digits.
